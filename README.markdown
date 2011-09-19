@@ -7,12 +7,13 @@ linux machine will print out what it receives over the serial
 port.
 
 Much of the code has come from the following:
-http://www.arduino.cc/playground/Interfacing/LinuxTTY
-http://www.arduino.cc/playground/Interfacing/Ruby
+
+* http://www.arduino.cc/playground/Interfacing/LinuxTTY
+* http://www.arduino.cc/playground/Interfacing/Ruby
 
 You will need:
-- A linux machine with Ruby and Rubygems installed
-- An arduino and a USB cable
+* A linux machine with Ruby and Rubygems installed
+* An arduino and a USB cable
 
 Setup
 -----
@@ -21,18 +22,18 @@ Setup
 	<blockquote>gem install serialport</blockquote>
 
 * Setup the serial port (may need sudo here as well)
-	<blockquote>stty -F /dev/ttyUSB0 cs8 9600 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl -echoke noflsh -ixon -crtscts</blockquote>
+	stty -F /dev/ttyUSB0 cs8 9600 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl -echoke noflsh -ixon -crtscts
 
 * Test the Serial port with 'cat' (quit by hitting <ctrl>-c)
-	<blockquote>cat /dev/ttyUSB0</blockquote>
+	`cat /dev/ttyUSB0`
 
 Run the code
 ------------
 
-* Run the code (may need sudo)
+Run the code (may need sudo)
 	ruby arduino.rb
 
-* You should see the words 'High' and 'Low' printing in the terminal
+You should see the words 'High' and 'Low' printing in the terminal
 
-* Stop the script
+Stop the script
 	<ctrl>-c
