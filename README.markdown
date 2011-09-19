@@ -19,15 +19,15 @@ You will need:
 Setup
 -----
 
-* Install the ruby gem serialport (you may need sudo)
+Install the ruby gem serialport (you may need sudo)
 
 	gem install serialport
 
-* Setup the serial port (may need sudo here as well)
+Setup the serial port (may need sudo here as well)
 	
 	stty -F /dev/ttyUSB0 cs8 9600 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl -echoke noflsh -ixon -crtscts
 
-* Test the Serial port with 'cat' (quit by hitting <ctrl>-c)
+Test the Serial port with 'cat' (quit by hitting <ctrl>-c)
 	
 	cat /dev/ttyUSB0
 
