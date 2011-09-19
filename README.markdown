@@ -12,6 +12,7 @@ Much of the code has come from the following:
 * http://www.arduino.cc/playground/Interfacing/Ruby
 
 You will need:
+
 * A linux machine with Ruby and Rubygems installed
 * An arduino and a USB cable
 
@@ -22,18 +23,21 @@ Setup
 	<blockquote>gem install serialport</blockquote>
 
 * Setup the serial port (may need sudo here as well)
-	stty -F /dev/ttyUSB0 cs8 9600 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl -echoke noflsh -ixon -crtscts
+	<blockquote>stty -F /dev/ttyUSB0 cs8 9600 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl -echoke noflsh -ixon -crtscts</blockquote>
 
 * Test the Serial port with 'cat' (quit by hitting <ctrl>-c)
-	`cat /dev/ttyUSB0`
+	
+	cat /dev/ttyUSB0
 
 Run the code
 ------------
 
 Run the code (may need sudo)
+
 	ruby arduino.rb
 
 You should see the words 'High' and 'Low' printing in the terminal
 
 Stop the script
-	<ctrl>-c
+	
+	ctr-c
