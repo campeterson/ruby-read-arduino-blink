@@ -20,10 +20,12 @@ Setup
 -----
 
 * Install the ruby gem serialport (you may need sudo)
-	<blockquote>gem install serialport</blockquote>
+
+	gem install serialport
 
 * Setup the serial port (may need sudo here as well)
-	<blockquote>stty -F /dev/ttyUSB0 cs8 9600 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl -echoke noflsh -ixon -crtscts</blockquote>
+	
+	stty -F /dev/ttyUSB0 cs8 9600 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl -echoke noflsh -ixon -crtscts
 
 * Test the Serial port with 'cat' (quit by hitting <ctrl>-c)
 	
@@ -38,6 +40,4 @@ Run the code (may need sudo)
 
 You should see the words 'High' and 'Low' printing in the terminal
 
-Stop the script
-	
-	ctr-c
+Stop the script using `^c`
